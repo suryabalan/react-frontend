@@ -57,7 +57,7 @@ class BookHospitalComponent extends Component {
     
         PatientService.createPatient(patient).then(res => {
             HospitalService.changeTotalNumBedsById(this.state.hospital_id).then(res => {
-                this.props.history.push('/');
+                this.props.history.push('/book-hospital');
                 
             })
         });
@@ -73,7 +73,7 @@ class BookHospitalComponent extends Component {
     
 
     cancel () {
-        this.props.history.push('/');
+        this.props.history.push('/book-hospital');
     }
     
 
